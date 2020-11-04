@@ -1,0 +1,39 @@
+{
+  "name": "background-jobs-redis",
+  "version": "1.0.0",
+  "description": "Tarefas em background utilizando Node.js, Redis e Sentry",
+  "main": "index.js",
+  "type": "module",
+  "contributors": [
+    {
+      "name": "João Trepichio",
+      "email": "trepichio@gmail.com",
+      "url": "https://trepichio.github.io",
+      "img": "https://avatars1.githubusercontent.com/u/11396817?s=60&v=4",
+      "info": [
+        "🚀"
+      ]
+    }
+  ],
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "queue": "nodemon src/queue.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "João Trepichio",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^5.27.2",
+    "@sentry/tracing": "^5.27.2",
+    "bull": "^3.18.1",
+    "bull-board": "^0.9.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.14",
+    "password-generator": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
