@@ -1,0 +1,7 @@
+{
+  "text": "Este é um repositório com um pequeno projeto de Tarefas em background utilizando Node.js e Redis desenvolvido no Bootcamp de NodeJS da plataforma Digital Innovation One<a href='http://digitalinnovationone.one'>(DIO)</a>. Adicionalmente, foi implementado o monitoramento de erros (Exceptions) utilizando o Sentry.io;",
+  "ids": {
+    "github": "trepichio/readme"
+  },
+  "line": "dark"
+}
