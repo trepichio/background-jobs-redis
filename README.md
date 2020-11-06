@@ -11,15 +11,17 @@
 
 ## ➤ Table of Contents
 
-- [➤ Table of Contents](#-table-of-contents)
-- [➤ Para rodar a aplicação](#-para-rodar-a-aplicação)
-  - [Instale as dependências:](#instale-as-dependências)
-  - [Instale e configure o Redis OU crie e suba um Docker assim:](#instale-e-configure-o-redis-ou-crie-e-suba-um-docker-assim)
-  - [Preencha/Substitua as suas variáveis de ambiente no arquivo .env:](#preenchasubstitua-as-suas-variáveis-de-ambiente-no-arquivo-env)
-  - [Rode a thread da fila:](#rode-a-thread-da-fila)
-  - [Rode a thread principal (Express):](#rode-a-thread-principal-express)
-- [➤ Contributors](#-contributors)
-- [➤ License](#-license)
+* [➤ Para rodar a aplicação](#-para-rodar-a-aplicao)
+	* [Instale as dependências:](#instale-as-dependncias)
+	* [Instale e configure o Redis OU crie e suba um Docker assim:](#instale-e-configure-o-redis-ou-crie-e-suba-um-docker-assim)
+	* [Preencha/Substitua as suas variáveis de ambiente no arquivo .env:](#preenchasubstitua-as-suas-variveis-de-ambiente-no-arquivo-env)
+	* [Rode a thread da fila:](#rode-a-thread-da-fila)
+	* [Rode a thread principal (Express):](#rode-a-thread-principal-express)
+* [➤ Para utilizar o Sentry](#-para-utilizar-o-sentry)
+	* [Crie uma conta gratuita no Sentry.io](#crie-uma-conta-gratuita-no-sentryio)
+	* [Crie dois projetos no site e obtenha seus DSN](#crie-dois-projetos-no-site-e-obtenha-seus-dsn)
+* [➤ Contributors](#-contributors)
+* [➤ License](#-license)
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)](#para-rodar-a-aplicao)
@@ -42,10 +44,22 @@
 <code>npm start</code>
 
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)](#para-utilizar-o-sentry)
+
+## ➤ Para utilizar o Sentry
+
+### Crie uma conta gratuita no Sentry.io
+Acesse o site http://sentry.io e crie/acesse sua conta
+
+### Crie dois projetos no site e obtenha seus DSN
+- Crie um projeto para Express e preencha o DSN na váriavel SENTRY_SERVER_DSN do seu arquivo .env
+- Crie um projeto para NodeJS e preencha o DSN na váriavel SENTRY_QUEUE_DSN do seu arquivo .env
+
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)](#contributors)
 
 ## ➤ Contributors
-
+	
 
 | [<img alt="João Trepichio" src="https://avatars1.githubusercontent.com/u/11396817?s=60&v=4" width="100">](https://trepichio.github.io) |
 |:--------------------------------------------------:|
@@ -57,5 +71,5 @@
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)](#license)
 
 ## ➤ License
-
+	
 Licensed under [ISC](https://opensource.org/licenses/ISC).

@@ -19,5 +19,14 @@
 ### Rode a thread principal (Express):
 <code>npm start</code>
 
+## Para utilizar o Sentry
+
+### Crie uma conta gratuita no Sentry.io
+Acesse o site http://sentry.io e crie/acesse sua conta
+
+### Crie dois projetos no site e obtenha seus DSN
+- Crie um projeto para Express e preencha o DSN na váriavel SENTRY_SERVER_DSN do seu arquivo .env
+- Crie um projeto para NodeJS e preencha o DSN na váriavel SENTRY_QUEUE_DSN do seu arquivo .env
+
 {{ template:contributors }}
 {{ template:license }}
